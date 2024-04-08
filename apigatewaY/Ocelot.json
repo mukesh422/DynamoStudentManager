@@ -1,0 +1,16 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Countries",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7143
+        }
+      ],
+      "UpstreamPathTemplate": "/Countries",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    }
+  ]
+}
